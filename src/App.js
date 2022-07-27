@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProjectListPage from './pages/ProjectListPage';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
-
+import FormularioReserva from './pages/formulario';
 
 
 import SignupPage from './pages/SignupPage';
@@ -88,6 +88,15 @@ function App() {
 						<AnonRoute>
 							<LoginPage />
 						</AnonRoute>
+					}
+				/>
+					<Route
+					exact
+					path="/formulario-reserva"
+					element={
+						<PrivateRoute>
+							<FormularioReserva />
+						</PrivateRoute>
 					}
 				/>
 			</Routes>

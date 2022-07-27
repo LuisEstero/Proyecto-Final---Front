@@ -11,14 +11,14 @@ function Navbar() {
     <nav>
       <h5 className="cabecera">COWORKING BARCELONA</h5>
       <Link to="/">
-        <button>Home</button>
+        <button className="boton-nav-home">Home</button>
       </Link>
       <Link to="/oficina">
-        <button>Oficina</button>
+        <button className="boton-nav-oficina">Oficina</button>
         
       </Link>
       <Link to="/salareuniones">
-        <button>Salas Reuniones</button>
+        <button className="boton-nav-salas">Salas Reuniones</button>
         
       </Link>
 -
@@ -27,13 +27,13 @@ function Navbar() {
             <Link to="/">
               {/* <button>Reservas</button> */}
             </Link>
-            <button onClick={logOutUser}>Logout</button>
-            <span>{user.name}</span>
+            <button className="boton-nav-logout" onClick={logOutUser}>Logout</button>
+            <span>Bienvenido: {user.name}</span>
           </>)
         : 
         (<>
-          <Link to="/signup"> <button>Signup</button> </Link>
-          <Link to="/login"> <button>Login</button> </Link>
+          <Link to="/signup"> <button className="boton-nav-signup">Signup</button> </Link>
+          <Link to="/login"> <button className="boton-nav-login">Login</button> </Link>
         </>)
       }
     </nav>

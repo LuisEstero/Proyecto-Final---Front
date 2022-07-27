@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 0px;
   
 }
 
@@ -36,4 +37,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cabecera{
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+.descripcion{
+  text-align: center;
+}
+.descripcion-texto{
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.title-bold{
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 30px;
 }

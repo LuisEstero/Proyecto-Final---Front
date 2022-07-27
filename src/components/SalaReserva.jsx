@@ -30,7 +30,7 @@ const getAllSalaReuniones = async ()=> {
       <img src={sala?.imagen} alt="sala" width={700}></img> 
       <p>{sala?.name}</p>
       <p>{sala?.direccion}</p>
-      <button className='boton-reserva'>Reservar Fecha/Hora</button>
+      <a href='/formulario-reserva'><button className='boton-reserva'>Reservar Fecha/Horaa</button></a>
      
     </div>
   )

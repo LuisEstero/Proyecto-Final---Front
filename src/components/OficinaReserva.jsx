@@ -29,10 +29,13 @@ const getAllOficina = async ()=> {
     
     <div> 
       <img src={office?.imagen} alt="oficina" width={700}></img>
-      <p>{office?.Name}</p>
+      <p className='title-bold'>{office?.Name}</p>
       <p>{office?.Direccion}</p>
-      <p>{office?.Descripcion}</p>
-      <button className='boton-reserva'>Reservar Fecha/Hora</button>
+      <div className='descripcion-texto'>
+        <p className='descripcion'>{office?.Descripcion}</p>
+      </div>
+      
+      <a href='/formulario-reserva'><button className='boton-reserva'>Reservar Fecha/Horaa</button></a>
       
     </div>
     
